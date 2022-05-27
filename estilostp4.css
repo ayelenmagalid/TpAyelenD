@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* CSS Document */
+* {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  font-size: 500%;
+  font-family: square peg;
+  text-align: center;
+}
+h2 {
+  font-size: 150%;
+  text-align: center;
+  float: left;
+}
+body {
+  background-image: url(img/fondorosa2.jpg);
+  padding-left: 6%;
+  display: flex;
+  flex-direction: column;
+}
+
+table {
+  background-color: rgb(255, 180, 239);
+  border-color: palevioletred;
+  border-style: solid;
+  border-width: 2px;
+  height: 75%;
+  align-self: center;
+  margin-top: 3%;
+  font-family: comic sans-serif;
+  font-size: 120%;
+}
+
+#boton {
+  color: blueviolet;
+  background-color: palevioletred;
+}

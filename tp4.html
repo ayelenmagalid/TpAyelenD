@@ -1,0 +1,91 @@
+<html>
+  <!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8" />
+      <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <link rel="stylesheet" href="estilostp4.css" />
+      <title>Contacto</title>
+      <link
+        href="https://fonts.googleapis.com/css2?family=Square+Peg&display=swap"
+        rel="estilostp.css"
+      />
+      <h1>Conectate con Nosotros</h1>
+    </head>
+  </html>
+  <body>
+    <h2>Envianos tus consultas. Responderemos a la brevedad.</h2>
+    <table>
+      <tr>
+        <td>Nombre completo:</td>
+        <td><input type="text" id="nombre" size="50" maxlength="20" /></td>
+      </tr>
+      <tr>
+        <td>mail:</td>
+        <td><input type="mail" id="clave" /></td>
+      </tr>
+      <tr>
+        <td>Como nos encontraste</td>
+        <td>
+          <input type="radio" name="pago" id="facebook" />
+          <label for="facebook">facebook</label>
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="radio" name="pago" id="instagram" />instagram</td>
+      </tr>
+      <tr>
+        <td></td>
+        <td>
+          <input
+            type="radio"
+            name="pago"
+            id="Sugerencia de otro cliente"
+          />Sugerencia de otro cliente
+        </td>
+      </tr>
+      <tr>
+        <td></td>
+        <td><input type="radio" name="otro" id="otro" />otro</td>
+      </tr>
+      <tr>
+        <td valign="top">Comentarios:</td>
+        <td>
+          <textarea
+            name="comentarios"
+            id="comentarios"
+            rows="10"
+            cols="40"
+            placeholder="Escriba aqui su comentario..."
+          ></textarea>
+        </td>
+      </tr>
+      <tr>
+        <td colspan="2" align="center" id="boton">
+          <input type="submit" value="Enviar Datos" onclick="validacion()" />
+          <a href="./tp1.html"
+            ><input type="button" value="Cancelar Envio"
+          /></a>
+        </td>
+      </tr>
+    </table>
+    <script>
+      function validacion() {
+        nombre = document.getElementById("nombre").value;
+        comentarios = document.getElementById("comentarios").value;
+
+        if (
+          comentarios != null ||
+          (comentarios.length != 0 && nombre != null)
+        ) {
+          alert("Gracias! " + nombre + " Te responderemos a la brevedad");
+        } else {
+          alert("Gracias! Te responderemos a la brevedad");
+        }
+        return true;
+      }
+    </script>
+  </body>
+</html>
